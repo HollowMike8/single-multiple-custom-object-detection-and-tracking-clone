@@ -6,7 +6,7 @@ from IPython import get_ipython
 if platform == "win32":
     path_dir = os.path.dirname(__file__)
     
-elif 'google.colab' in str(get_ipython()):
+else:
     path_dir = "/content/single-multiple-custom-object-detection-and-tracking-clone"
 
 # define the directory path to the input videos
@@ -28,4 +28,4 @@ deep_sort_dir = os.path.join(path_dir, "deep_sort")
 label = "person"
 
 # define threshold confidence to filter weak detections
-yolo_thres_confidence = 0.9
+yolo_thres_confidence = 0.8
