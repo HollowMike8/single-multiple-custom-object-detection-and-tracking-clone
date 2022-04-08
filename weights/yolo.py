@@ -5,7 +5,7 @@ import numpy as np
 import config
 
 # load the COCO class labels for YOLO model
-labels_path = os.path.join(config.cnn_yolo_dir, "coco.names")
+labels_path = os.path.join(config.cnn_yolo_dir, "ignore.names")
 labels = open(labels_path, "r").read().strip().split("\n")
 
 # assign random colours to all COCO class labels
